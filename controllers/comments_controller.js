@@ -9,12 +9,12 @@ module.exports.create=function(req,res)
         if(post)
         {
             Comment.create({
-                content:req.body.content,
-                post:req.body.post,
-                user:req.user._id
+                content: req.body.content,
+                post: req.body.post,
+                user: req.user._id
             },function(err,comment){
                // handdle error 
-              post.comment.push(comment);
+              post.comments.push(comment);
                post.save();
                res.redirect('/');
             });
