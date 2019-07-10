@@ -1,4 +1,4 @@
-const Post=require('../models/post')
+const Post=require('../models/post');
 module.exports.create=function(req,res)
 {
     Post.create({
@@ -7,7 +7,6 @@ module.exports.create=function(req,res)
     },function(err,post){ 
         if(err)
         {console.log('error in creating  a post');return;}
-        
         return res.redirect('back');
     });
 }
