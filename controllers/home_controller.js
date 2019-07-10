@@ -19,11 +19,11 @@ module.exports.home=function(req,res)
 
 
   Post.find({})
-  .populate('user')
+  .populate('users')
   .populate({
      path:'comments',
      populate:{
-        path:'user'
+        path:'users'
      }
   })
   .exec(function(err,posts){
