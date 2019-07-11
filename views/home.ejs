@@ -1,5 +1,5 @@
         <h1>
-         codeial /<%=title%>
+          <%=title%>
         </h1>
 <section id="feed-posts">
  <h4> Posts </h4>
@@ -15,9 +15,9 @@
                      <%for(post of posts){%>
                                 <li>
                                         <p>
-                                            <% if(locals.user && locals.user.id==post.user.id){%>
+                                            <% if(locals.user && locals.user.id==post.user.id){ %>
                                               <small>
-                                                <a href="posts/destroy/<%= post.id %>">X</a>
+                                                <a href="/posts/destroy/<%= post.id %>">X</a>
                                               </small>
                                              <%}%>
                                             <%= post.content%>
