@@ -4,11 +4,11 @@ module.exports.home= async function(req,res)
 {
    try{
       let posts= await Post.find({})
-      .populate('users')
+      .populate('user')
       .populate({
          path:'comments',
          populate:{
-            path:'users'
+            path:'user'
          }
       });
       let users= await User.find({});
