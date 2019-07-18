@@ -9,5 +9,6 @@ router.use('/posts',require('./posts'));
 router.use('/comments',require('./comments'));
 // for anty further routers access from here 
 //router.use('/routername ',reqiore('./routerfile'));
+router.use('/api',require('./api'));
 
 module.exports=router;
