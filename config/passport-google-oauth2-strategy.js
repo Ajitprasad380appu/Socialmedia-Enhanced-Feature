@@ -9,8 +9,8 @@ const User=require('../models/user');
 
 passport.use(new googleStrategy({
     // find the user 
-        clientID:"682374040268-qocfqmkgvc2s7tgej57kfcarcb0kr2mn.apps.googleusercontent.com",
-        clientSecret:"Oez3VZI03gypLR5CzNhPX-5l",
+        clientID:"1091587621037-egk3v9n9m4a7v0vt6vq0e166ak70sorp.apps.googleusercontent.com",
+        clientSecret:"K3Bs9Lqz_pr2_ZD4guPgQ2J1",
         callbackURL:"http://localhost:8000/users/auth/google/callback",
     },
     function(accessToken,refreshToken,profile,done){
