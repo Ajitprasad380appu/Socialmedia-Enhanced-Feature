@@ -18,7 +18,7 @@ let renderTemlate=(data,relativePath)=>{
         path.join(__dirname,'../views/mailers',relativePath),
         data,
         function(err,template){
-            if(err){console.log('error in the randring templete');return;}
+            if(err){console.log('error in the randring templete',err);return;}
             mailHTML=template;
         }
     )
