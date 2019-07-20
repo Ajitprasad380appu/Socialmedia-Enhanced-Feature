@@ -8,7 +8,7 @@ let transpoter=nodemailer.createTransport({
     secure:false,
     auth:{
         user:'ajitprasad01011994@gmail.com',
-        pass:'123'
+        pass:'PAPPU#prasad@01'
     }
 });
 
