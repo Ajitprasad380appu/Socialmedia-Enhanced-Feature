@@ -19,7 +19,7 @@ exports.newComment=(comment)=>{
             console.log('err in sending  mail',err);
             return ;
         }
-        console.log('message is delever',info);
+      //  console.log('message is delever',info);
         return ;
 
     });
