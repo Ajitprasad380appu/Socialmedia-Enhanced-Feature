@@ -21,7 +21,7 @@ module.exports.create= async function(req,res)
 
             comment=await comment.populate('user','name email').execPopulate();
 
-            // commentsMailer.newComment(comment);
+             //commentsMailer.newComment(comment);
             let job=queue.create('emails',comment).save(function(err){
                 if(err){ console.log('error in creating a queue');return;}
 
@@ -31,7 +31,7 @@ module.exports.create= async function(req,res)
             });
 
             // queueMicrotask.create('emails',comment).save(function(err){
-            //    
+               
             //    console.log(job.id);
             //     });
             if(req.xhr){
@@ -83,9 +83,6 @@ module.exports.destroy = async function(req,res){
     }
     
 }
-
-
-
 
 // Comment.findById(req.params.id,function(err,comment){
 //     if(comment.user==req.user.id){

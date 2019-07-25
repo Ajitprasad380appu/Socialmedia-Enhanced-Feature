@@ -36,8 +36,6 @@
             });
         });
     }
-
-
     // method to create a post in DOM
     let newPostDom = function(post){
         // CHANGE :: show the count of zero likes on this post
@@ -45,7 +43,7 @@
                     <p>
                         
                         <small>
-                            <a class="delete-post-button"  href="/posts/destroy/${ post._id }">X</a>
+                            <a class="delete-post-button"  href="/posts/destroy/${post._id }">X</a>
                         </small>
                        
                         ${ post.content }
