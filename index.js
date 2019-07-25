@@ -18,7 +18,7 @@ const customMware = require('./config/middleware');
 const chatServer=require('http').Server(app);
 const chatSockets=require('./config/chat_sockets').chatSockets(chatServer);
 chatServer.listen(1200);
-console.log('chat server is running on 6000');
+console.log('chat server is running on 1200');
 app.use(sassMiddleware({
      
     src:'./assets/scss',

@@ -9,6 +9,17 @@ module.exports.chatSockets=function(socketServer)
             console.log('socket disconnected !')
         });
 
+
+
+        socket.on('join_room',function(data){
+            console.log('joining request req',data);
+            socket.join(data.chatroom);
+            // if codeial is alredy exist then user will be connected 
+            // incase does not exist then it create a chat room  and enter to the user or connect to the
+            // the user 
+            io.in(data.chatroom).emit('user_joined',data);
+        })
+
     });
     // connection it's over
 
