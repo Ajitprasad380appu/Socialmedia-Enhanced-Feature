@@ -45,6 +45,6 @@
 <script>
         // it take chat box id
         // only locals user are not available then it not show a chat box 
-        new ChatEngine('user-chat-box','<%=locals.user._id%>');
+        new ChatEngine('user-chat-box','<%=locals.user.email%>');
 </script>
 <%}%>

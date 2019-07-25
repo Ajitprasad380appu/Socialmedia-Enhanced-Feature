@@ -5,7 +5,7 @@ class ChatEngine{
     constructor(chatBoxId,userEmail){
         this.chatBox=$(`#${chatBoxId}`);
         this.userEmail=userEmail;
-        this.socket=io.connect('http://localhost:6000');
+        this.socket=io.connect('http://localhost:1200');
         // user email are available then it call to the connection handler 
         if(this.userEmail){
             this.connectionHandler();
