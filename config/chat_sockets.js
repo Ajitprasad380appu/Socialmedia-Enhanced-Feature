@@ -15,7 +15,17 @@ module.exports.chatSockets=function(socketServer)
             // incase does not exist then it create a chat room  and enter to the user or connect to the
             // the user 
             io.in(data.chatroom).emit('user_joined',data);
-        })
+        });
+
+
+
+
+        socket.on('send_message',function(data){
+          
+            
+            io.in(data.chatroom).emit('receive_message',data);
+        });
+
 
     });
     // connection it's over
