@@ -17,8 +17,8 @@ const customMware = require('./config/middleware');
 // setup the chat server to be used with socket.io
 const chatServer=require('http').Server(app);
 const chatSockets=require('./config/chat_sockets').chatSockets(chatServer);
-chatServer.listen(1200);
-console.log('chat server is running on 1200');
+chatServer.listen(12000);
+console.log('chat server is running on 12000');
 app.use(sassMiddleware({
      
     src:'./assets/scss',
@@ -43,7 +43,6 @@ app.set('layout extractScripts',true);
 // set up view enginen
 app.set('view engine','ejs');
 app.set('views','./views');
-
 
 // mongo store is used to store the session cookies in the db
 

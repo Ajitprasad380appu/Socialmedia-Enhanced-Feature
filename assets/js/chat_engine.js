@@ -5,7 +5,7 @@ class ChatEngine{
     constructor(chatBoxId,userEmail){
         this.chatBox=$(`#${chatBoxId}`);
         this.userEmail=userEmail;
-        this.socket=io.connect('http://localhost:1200');
+        this.socket=io.connect('http://localhost:12000');
         // user email are available then it call to the connection handler 
         if(this.userEmail){
 
@@ -47,7 +47,7 @@ class ChatEngine{
             let messageType='other-message';
             if(data.user_email==self.userEmail)
             {
-                messageType='self_message';
+                messageType='self-message';
             }
             newMessage.append($('<span>',{
                 'html':data.message
@@ -56,7 +56,7 @@ class ChatEngine{
                 'html':data.user_email
             }));
             newMessage.addClass(messageType);
-            $('#chat-messages_list').append(newMessage);
+            $('#chat-messages-list').append(newMessage);
         })
     }
 }
