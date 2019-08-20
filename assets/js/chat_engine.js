@@ -31,7 +31,8 @@ class ChatEngine{
                 console.log('a user joined', data);
             })
         });
-        $('#send_message').click(function(){
+        $('#send-message').click(function(){
+            let msg =$('#chat-message-input').val();
             if(msg != '')
             {
                 self.socket.emit('send_message',{
