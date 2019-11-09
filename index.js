@@ -20,7 +20,6 @@ const chatSockets=require('./config/chat_sockets').chatSockets(chatServer);
 chatServer.listen(12000);
 console.log('chat server is running on 1200');
 app.use(sassMiddleware({
-     
     src:'./assets/scss',
     dest:'./assets/css',
     debug:true,
