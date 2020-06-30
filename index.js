@@ -18,7 +18,7 @@ const customMware = require('./config/middleware');
 const chatServer=require('http').Server(app);
 const chatSockets=require('./config/chat_sockets').chatSockets(chatServer);
 chatServer.listen(12000);
-console.log('chat server is running on 1200');
+//console.log('chat server is running on 1200');
 app.use(sassMiddleware({
     src:'./assets/scss',
     dest:'./assets/css',
@@ -54,7 +54,7 @@ app.use(session({
     saveUninitialized:false,
     resave:false,
     cookie:{
-        maxAge:(1000*60*100)
+        maxAge:(10000 * 60 * 60 * 24 * 7)
     },
     store:new MongoStore({
             mongooseConnection:db,

@@ -5,14 +5,14 @@
     border: 1px dashed rgb(196, 30, 66);
     height: 350px;
     width: 300px;
-    background: rgb(34, 31, 192);
+    background: rgb(185, 40, 173);
     padding: 5px;
-    box-shadow: 1px 1px 1px 1px rgb(41, 21, 116);
+    box-shadow: 1px 1px 1px 1px rgb(185, 40, 173);
     #chat-messages-list{
         list-style: none;
         padding: 10px;
         height: 70%;
-        background-color:rgb(49, 17, 17);
+        background-color:rgb(185, 40, 173);
         overflow: auto;
         .other-message{
             text-align: left;
@@ -20,7 +20,7 @@
             span{
                 display: inline-block;
                 padding: 15px;
-                background-color: #0f1cd8;
+                background-color:rgb(185, 40, 173) ;
 
             }
         }
@@ -30,7 +30,7 @@
             span{
                 display: inline-block;
                 padding: 15px;
-                background-color: #197fbb;
+                background-color:rgb(185, 40, 173);
             }
         }
     }
@@ -47,9 +47,9 @@
          height: 50%;
          width: 30%;
          font-size: 25px;
-         color: rgb(26, 17, 145);
+         color: rgb(150, 21, 133);
          border: none;
-         background-color: rgb(8, 207, 91);
+         background-color: rgb(207, 8, 68);
      }
     }
 }

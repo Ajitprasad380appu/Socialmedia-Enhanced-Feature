@@ -1,3 +1,4 @@
+
 const nodemailer=require("nodemailer");
 const ejs=require('ejs');
 const path=require('path');
@@ -8,7 +9,7 @@ let transpoter=nodemailer.createTransport({
     secure:false,
     auth:{
         user:'ajitprasad01011994@gmail.com',
-        pass:'PAPPU#prasad@01'
+        pass:'POWER#mind@01'
     }
 });
 
@@ -24,7 +25,6 @@ let renderTemlate=(data,relativePath)=>{
     )
     return mailHTML;
 }
-
 
 module.exports={
     transpoter:transpoter,
